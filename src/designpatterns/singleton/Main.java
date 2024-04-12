@@ -4,6 +4,10 @@ package designpatterns.singleton;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        DatabaseConnectionV1 db = new DatabaseConnectionV1();
+        DatabaseConnectionV1 db2 = new DatabaseConnectionV1();
+        System.out.println(db == db2);
+//        DatabaseConnection_V2 db3= new DatabaseConnection_V2(); //Private constructor hence getting error;
 
     }
 }

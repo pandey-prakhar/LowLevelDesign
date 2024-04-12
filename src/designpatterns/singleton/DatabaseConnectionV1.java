@@ -1,6 +1,6 @@
 package designpatterns.singleton;
 
-public class DatabaseConnection {
+public class DatabaseConnectionV1 {
     private String url;
     private String username;
     private String password;
