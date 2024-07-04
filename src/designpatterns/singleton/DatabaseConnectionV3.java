@@ -1,12 +1,18 @@
 package designpatterns.singleton;
+//IN this version created a private constructor  and public method to create instance still not achieved singleton as
+// we are creating new objects inside method also.
 
-public class DatabaseConnectionV2 {
+public class DatabaseConnectionV3 {
     private String url;
     private String username;
     private String password;
     private String port;
-    //IN this version created a private constructor still not achieved singleton as we are not able to create the class itlself.
-    private DatabaseConnectionV2() {
+
+    private DatabaseConnectionV3() {
+    }
+
+    public static DatabaseConnectionV3 getConnection(){
+        return new DatabaseConnectionV3();
     }
 
     public String getPort() {

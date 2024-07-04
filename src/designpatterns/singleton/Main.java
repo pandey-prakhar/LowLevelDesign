@@ -7,7 +7,9 @@ public class Main {
         DatabaseConnectionV1 db = new DatabaseConnectionV1();
         DatabaseConnectionV1 db2 = new DatabaseConnectionV1();
         System.out.println(db == db2);
-//        DatabaseConnection_V2 db3= new DatabaseConnection_V2(); //Private constructor hence getting error;
-
+//      DatabaseConnection_V2 db3= new DatabaseConnection_V2(); //Private constructor hence getting error;
+        DatabaseConnectionV3 db4= DatabaseConnectionV3.getConnection();
+        DatabaseConnectionV3 db5= DatabaseConnectionV3.getConnection();
+        System.out.println(db4 == db5);
     }
 }
