@@ -9,6 +9,11 @@ public class Builder {
     int score;
     int psp;
 
+    public Student build(){
+        //Inside build we can have all the validations.q
+        return new Student(this);
+    }
+
     public int getId() {
         return id;
     }

@@ -10,6 +10,10 @@ public class Student {
     int score;
     int psp;
 
+    public static Builder getBuilder(){
+        return new Builder();
+    }
+
     public Student(Builder builder){
         //we can add any validations in this and in map as well.
         this.id= builder.getId();
