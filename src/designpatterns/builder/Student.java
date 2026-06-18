@@ -103,8 +103,9 @@ public class Student {
             return psp;
         }
 
-        public void setPsp(int psp) {
+        public Builder setPsp(int psp) {
             this.psp = psp;
+            return this;
         }
     }
 }

@@ -1,4 +1,4 @@
-package designpatterns.singleton;
+ package designpatterns.singleton;
 //IN this version created a private constructor  and public method to create instance still not achieved singleton as
 // we are creating new objects inside method also.
 

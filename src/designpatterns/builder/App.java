@@ -7,8 +7,11 @@ public class App {
         //version 4
 //        Builder builder = Student.getBuilder();
 //        Student student = builder.build();
-        Student st2= Student.getBuilder().setGender("Male").build();
-
+        final Student st2= Student.getBuilder()
+                .setName("Prakhar")
+                .setGender("M")
+                .setAge(27)
+                .build();
 
     }
 }
